@@ -1,0 +1,6 @@
+-javaagent:D:/Projects/SpringDemo/org.jacoco.agent-0.8.7-runtime.jar=destfile=D:/Projects/SpringDemo/jacoco.exec,append=true,includes=app.*,output=tcpserver,address=*,port=6300
+
+mvn jacoco:report
+
+
+java -jar D:/Projects/SpringDemo/org.jacoco.agent-0.8.7-runtime.jar report jacoco.exec --html ./report --sourcefiles D:/Projects/SpringDemo/src/main/java --classfiles D:/Projects/SpringDemo/target/classes
